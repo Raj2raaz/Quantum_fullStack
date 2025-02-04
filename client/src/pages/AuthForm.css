@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #00a8cc, #004e64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #1b2a41;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    position: relative;
+}
+
+h2 {
+    background: #00e0ff;
+    color: #000;
+    padding: 15px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    background: #2d4159;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon i {
+    font-size: 40px;
+    color: white;
+}
+
+.input-container {
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-container input, .input-container select {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #2d4159;
+    color: white;
+    outline: none;
+}
+
+.input-container input::placeholder, .input-container select {
+    color: #bbb;
+}
+
+.input-container i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbb;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.remember-forgot input {
+    margin-right: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #00e0ff;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #00bcd4;
+}
+
+.toggle-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #00e0ff;
+}
+
+.toggle-btn:hover {
+    text-decoration: underline;
+}
