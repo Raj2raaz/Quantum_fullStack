@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./AuthForm.css"; 
 import { FaUser, FaLock, FaEnvelope, FaCalendar, FaUserTie } from "react-icons/fa"; 
 import { AuthContext } from "../AuthContext";
@@ -19,6 +19,18 @@ const AuthForm = () => {
 
   const [error, setError] = useState("");
 
+  useEffect(()=>{
+    setError('')
+    setFormData({
+      name : "",
+      username : "",
+      email : "",
+      password : "",
+      dob : "",
+      role : "",
+    })
+  },[isLogin])
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -32,6 +44,7 @@ const AuthForm = () => {
       if (response.error) {
         setError(response.error);
       } else {
+        alert("Login Successful")
         navigate("/dashboard"); 
       }
     } else {
@@ -50,6 +63,7 @@ const AuthForm = () => {
       if (response.error) {
         setError(response.error);
       } else {
+        alert("Signnup Successful")
         setIsLogin(true); 
       }
     }

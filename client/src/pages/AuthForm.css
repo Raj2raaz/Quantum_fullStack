@@ -49,6 +49,10 @@ h2 {
     color: white;
 }
 
+.error-message{
+    color: red
+}
+
 .input-container {
     margin: 10px 0;
     position: relative;
